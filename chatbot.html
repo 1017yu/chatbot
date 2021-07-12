@@ -10,12 +10,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="message"> 죠르디~ </div>
+        <div id="message"> 죠르디~ </div>
         <div class="img">
             <img src="imgs/jordi.jpeg" width="200px", height="200px">
         </div>  
         <input type="question" id="question" class="question" placeholder="무엇을 시킬까요?">
         <input type="submit" class="btn" value="시키기">
+        </br>
+        <div class="calc">
+          <input type="button" value="+" onclick="Add()">
+          <input type="button" value="-" onclick="Sub()">
+          <input type="button" value="*" onclick="Div()">
+          <input type="button" value="/" onclick="Mul()">
         </div>
-    </div>      
+    </div>
+    <script src="chatbot.js"></script>      
 </body>
