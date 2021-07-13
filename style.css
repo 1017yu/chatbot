@@ -11,16 +11,17 @@
   margin-right: auto;
 }
 
-.message {
+#message {
   border: 3px solid; 
   border-radius: 10px;
   background-color: #ccffcc;
-  margin: 100px auto 50px auto;
+  margin: 50px auto 50px auto;
   text-align: center;
   width: 50%;
   padding: 10% 15%;
   font-size: 30px;
 }
+
 .img {
   text-align: center;
 }
@@ -38,14 +39,63 @@
   text-align: center;
   font-size: 20px;
 }
+
 .btn {
   display: block;
   border: none;
   border-radius: 50px;
   background-color: #CCFFCC;
   text-align: center;
-  margin: 40px auto;
+  margin: 40px auto 4px auto;
   width: 25%;
   font-size: 20px;
   padding: 30px;
+  cursor: pointer;
+}
+
+.calc {
+  cursor: pointer;
+  display: block;
+  border: none;
+  border-radius: 50px;
+  background-color: #CCFFCC;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 40%;
+  height: 11rem;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.calc input[type = button] {
+  border: none;
+  border-radius: 50px;
+  background-color: #CCFFCC;
+  margin: auto;
+  margin-right: 10px;
+  width: 20%;
+  height: 3em;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.calc input[type = button]:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: rgb(0, 0, 0);
+  transform: translateY(-7px);
+}
+
+.stopWatch {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stopWatch input[type = button] {
+  width: 8%;
+  height: 50px;
+  margin-right: 10px;
 }
