@@ -23,7 +23,7 @@ function btn(){
       message.innerHTML = "오늘은 습한 날씨네요 ☔️";
   }
   else if(question.value === list.chunsik){
-      message.innerHTML = '<a href="http://127.0.0.1:5500/chunsik.html" target="_blank" color=black>여기 여기!</a>';
+      message.innerHTML = '<a href="https://competent-payne-da6f41.netlify.app/chunsik.html" target="_blank" color=black>여기 여기!</a>';
   }
   else if(question.value == "불좀 꺼줄래?"){
     if(n == 0){
