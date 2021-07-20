@@ -48,6 +48,6 @@ function btn(){
   }
   
   else {
-    message.innerHTML = "뭐라고?";
+    message.innerHTML = "뭐라고?\n ('명령어' 라고 입력해보세요!)";
   }
 }
