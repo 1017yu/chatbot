@@ -42,7 +42,11 @@ function btn(){
   else if(question.value === "이제 불 켜줘"){
       message.innerHTML = "짠!"
       document.body.style.backgroundColor = '#ffffff';
+    }
+  else if(question.value === "명령어") {
+    message.innerHTML = "너는 누구야?, 누가 만들었어?, 오늘 날씨 어때?,다른 친구는 어딨어?";
   }
+  
   else {
     message.innerHTML = "뭐라고?";
   }
