@@ -44,7 +44,7 @@ function btn(){
       document.body.style.backgroundColor = '#ffffff';
     }
   else if(question.value === "명령어") {
-    message.innerHTML = "너는 누구야? <br> 누가 만들었어? <br> 오늘 날씨 어때? <br> 다른 친구는 어딨어?";
+    message.innerHTML = "너는 누구야? <br> 누가 만들었어? <br> 오늘 날씨 어때? <br> 다른 친구는 어딨어? <br> 불좀 꺼줄래?";
   }
   
   else {
