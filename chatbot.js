@@ -43,4 +43,7 @@ function btn(){
       message.innerHTML = "짠!"
       document.body.style.backgroundColor = '#ffffff';
   }
+  else {
+    message.innerHTML = "뭐라고?";
+  }
 }
