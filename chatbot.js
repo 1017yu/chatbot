@@ -51,3 +51,12 @@ function btn(){
     message.innerHTML = "뭐라고? <br> ('명령어' 라고 입력해보세요!)";
   }
 }
+
+function sendMyText(e) {
+  if (e.key === 'Enter') {
+    btn();
+    alert();
+  }
+}
+
+input.addEventListener('keypress', sendMyText);
