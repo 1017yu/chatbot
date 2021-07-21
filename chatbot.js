@@ -53,10 +53,10 @@ function btn(){
 }
 
 function sendMyText(e) {
-  if (e.key === 'Enter') {
-    btn();
-    alert();
+  if (e.key === 'Enter') { // Enter 키를 입력 받으면
+    btn();  // btn() 함수 실행
   }
 }
 
-input.addEventListener('keypress', sendMyText);
+// 이벤트 핸들러 등록
+question.addEventListener('keypress', sendMyText);
