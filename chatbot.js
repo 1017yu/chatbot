@@ -43,12 +43,45 @@ function btn(){
       message.innerHTML = "짠!"
       document.body.style.backgroundColor = '#ffffff';
     }
+
+  else if(question.value === "갸라도스 잡으러 가자!"){
+      message.innerHTML = 
+      message.innerHTML = `갸라! <br> <img src = "http://appdata.hungryapp.co.kr/images/dbimg/pokemongo/thumb/130.png" background: transparent, width: 30px>`
+      var app = document.getElementById("app");
+
+      var typewriter = new Typewriter(app, {
+        loop: false,
+      });
+        typewriter
+        .typeString('야생의 갸라도스가 나타났다!')
+        .pauseFor(600)
+        .deleteAll()
+        .start();
+  }
+
   else if(question.value === "명령어") {
-    message.innerHTML = "🌸너는 누구야? <br> 🌸누가 만들었어? <br> 🌸오늘 날씨 어때? <br> 🌸다른 친구는 어딨어? <br> 🌸불좀 꺼줄래?";
+    console.log(question.value);
+    console.log(list);
+    message.innerHTML = "🌸 너는 누구야? <br> 🌸 누가 만들었어? <br> 🌸 오늘 날씨 어때? <br> 🌸 다른 친구는 어딨어? <br> 🌸 불좀 꺼줄래? <br>⚔️ 갸라도스 잡으러 가자!";
   }
   
   else {
-    message.innerHTML = "뭐라고? <br> ('명령어' 라고 입력해보세요!)";
+    console.log(question.value);
+    message.innerHTML = "뭐라고?";
+
+    var app = document.getElementById("app");
+
+    var typewriter = new Typewriter(app, {
+      loop: false,
+    });
+  typewriter
+    .typeString('죠르디가 알아듣지 못한 것 같다.')
+    .pauseFor(600)
+    .deleteAll()
+    .typeString('<strong>명령어</strong> 라고 입력해보자!')
+    .pauseFor(1300)
+    .deleteAll()
+    .start();
   }
 }
 
@@ -60,3 +93,4 @@ function sendMyText(e) {
 
 // 이벤트 핸들러 등록
 question.addEventListener('keypress', sendMyText);
+
