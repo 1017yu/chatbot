@@ -8,11 +8,16 @@ const list = {
 }
 
 var n = 0;
+var user_question = "";
+var user_answer = "";
+var key = 0;
+
 
 function btn(){
   if(question.value === list.jordi){
-      console.log("저는 죠르디에요 ❤️");
-      message.innerHTML = "저는 죠르디에요 ❤️";
+      console.log("저는 죠르디에요");
+      console.log(typeof list);
+      message.innerHTML = "저는 죠르디에요";
   }
   else if(question.value === list.kled){
       console.log("Kled님이 만들었어요 :)");
@@ -67,8 +72,28 @@ function btn(){
   
   else {
     console.log(question.value);
-    message.innerHTML = "뭐라고?";
+    
+    if(key == 1){
+      if(question == "네"){
+        message.innerHTML = "대답을 입력해주세요!"
+        key = 2;
+      }
+      else{
+        message.innerHTML = "흑흑.."
+        key = 0;
+      }
+      return;
+    }
 
+    if(key == 2){
+      message = user_question;
+      push_list();
+    }
+
+    message.innerHTML = "말을 가르쳐 주실래요? ( 네 / 아니오 )";
+    user_question = question;
+    key = 1;
+   
     var app = document.getElementById("app");
 
     var typewriter = new Typewriter(app, {
@@ -85,10 +110,17 @@ function btn(){
   }
 }
 
+
 function sendMyText(e) {
   if (e.key === 'Enter') { // Enter 키를 입력 받으면
     btn();  // btn() 함수 실행
+    e.preventDefault();
+    question.value = ' ';  // Enter 이벤트 이후 입력창 초기화
   }
+}
+
+function push_list(){
+  list.push({})
 }
 
 // 이벤트 핸들러 등록
